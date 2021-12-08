@@ -1,6 +1,7 @@
 import torch
 import torchvision
 import torchvision.transforms as transforms
+import torch.multiprocessing as mp
 import matplotlib.pyplot as plt
 import torch.nn as nn
 import numpy as np
@@ -17,6 +18,7 @@ parser.add_argument('--num-epochs', type=int, default=100, help='number of epoch
 parser.add_argument('--momentum', type=int, default=0.9, help='momentum value of optimizer training (default: 0.9)')
 parser.add_argument('--learning-rate', type=int, default=0.001, help='learning rate of optimizer training (default: 0.001)')
 parser.add_argument('--display-interval', type=int, default=5, help='interval for printing while training each epoch')
+parser.add_argument('--num-processes', type=int, default=2, help='number of processes used to train model')
 args = parser.parse_args()
 
 train_set = torchvision.datasets.CIFAR10('./data', download=True, train=True, transform=transforms.Compose([transforms.ToTensor()]))
@@ -57,7 +59,16 @@ if __name__ == '__main__':
             'shuffle': True,
     }
 
-    train(args, model, device, train_set, dataloader_kwargs)
+    model.share_memory()
+
+    processes = []
+    for i in range(args.num_processes):
+        process = mp.Process(target=train, args=(args, model, device, train_set, dataloader_kwargs))
+        process.start()
+        processes.append(process)
+    for process in processes:
+        process.join()
+
     test(args, model, device, test_set, dataloader_kwargs)
 
 

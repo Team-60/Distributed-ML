@@ -3,6 +3,7 @@ import torchvision
 import torchvision.transforms as transforms
 import torch.nn as nn
 import torch.optim as optim
+import os
 
 def train(args, model, device, dataset, dataloader_kwargs):
     
@@ -25,8 +26,10 @@ def train(args, model, device, dataset, dataloader_kwargs):
             optimizer.step()
 
             if idx % args.display_interval == 0:
-                print('Trian Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(epoch, idx * len(images), len(train_loader.dataset),
+                print('Process id: {}, Trian Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
+                    os.getpid(), epoch, idx * len(images), len(train_loader.dataset),
                     100 * idx / len(train_loader), loss.item()))
+        return 
 
 
 def test(args, model, device, dataset, dataloader_kwargs):
