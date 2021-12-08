@@ -7,7 +7,7 @@ import torch.nn as nn
 import numpy as np
 from tqdm import tqdm
 import argparse
-from train import *
+from train import train, test
 
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
