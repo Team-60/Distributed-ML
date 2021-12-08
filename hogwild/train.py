@@ -23,7 +23,8 @@ def train(args, model, device, dataset, dataloader_kwargs):
             epoch_loss += loss
 
             loss.backward()
-            optimizer.step()
+            SGD_step(optimizer)
+            #optimizer.step()
 
             if idx % args.display_interval == 0:
                 print('Process id: {}, Trian Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
@@ -53,3 +54,37 @@ def test(args, model, device, dataset, dataloader_kwargs):
     test_loss /= len(test_loader.dataset)
     print('Test set: Average Loss {:.2f}, Accuracy: {:.2f}%'.format(
         test_loss, correct / len(test_loader.dataset) * 100))
+
+
+def SGD_step(optimizer):
+
+    if not isinstance(optimizer, optim.SGD):
+        raise ValueError("Not SGD optimizer used in SGD_step()")
+
+    loss = None
+
+    for group in optimizer.param_groups:
+        momentum = group['momentum']
+        dampening = group['dampening']
+        nesterov = group['nesterov']
+        lr = -group['lr']
+
+        for p in group['params']:
+            if p.grad is not None:
+                p_grad = p.grad.data
+                if momentum != 0:
+                    param_state = optimizer.state[p]
+                    if 'momentum_buffer' not in param_state:
+                        buf = param_state['momentum_buffer'] = p_grad.clone()
+                    else:
+                        buf = param_state['momentum_buffer']
+                        buf.mul_(momentum).add_(1 - dampening, p_grad)
+                    if nesterov:
+                        p_grad = p_grad.add(momentum, buf)
+                    else:
+                        p_grad = buf
+
+                p.data.add_(lr, p_grad)
+
+    return loss
+
