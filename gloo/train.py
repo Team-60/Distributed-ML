@@ -75,9 +75,10 @@ def train(args, model, device, dataset, dataloader_kwargs):
 
             loss.backward()
 
-            for param in model.parameters():
-                dist.all_reduce(param.grad.data, op=dist.ReduceOp.SUM)
-                param.grad.data /= args.world_size
+            if idx % args.step_size == 0:
+                for param in model.parameters():
+                    dist.all_reduce(param.grad.data, op=dist.ReduceOp.SUM)
+                    param.grad.data /= args.world_size
 
             optimizer.step()
 

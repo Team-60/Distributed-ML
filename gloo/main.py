@@ -24,6 +24,7 @@ parser.add_argument('--learning-rate', type=int, default=0.001, help='learning r
 parser.add_argument('--display-interval', type=int, default=5, help='interval for printing while training each epoch')
 parser.add_argument('--world-size', type=int, default=2, help='the world size of the cluster')
 parser.add_argument('--rank', type=int, default=0, help='rank of the process')
+parser.add_argument('--step-size', type=int, default=5, help='step size for local sgd')
 args = parser.parse_args()
 
 class CNN(nn.Module):
