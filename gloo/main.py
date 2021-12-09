@@ -13,6 +13,7 @@ from random import Random
 import torch.optim as optim
 from math import ceil
 import torch.nn.functional as F
+from train import train, test
 
 
 parser = argparse.ArgumentParser(description='Shared Memory MNIST')
@@ -50,96 +51,38 @@ class CNN(nn.Module):
     out = self.softmax(out)
     return out
 
+def run(args, rank, size):
 
-""" Dataset partitioning helper """
-class Partition(object):
-
-    def __init__(self, data, index):
-        self.data = data
-        self.index = index
-
-    def __len__(self):
-        return len(self.index)
-
-    def __getitem__(self, index):
-        data_idx = self.index[index]
-        return self.data[data_idx]
-
-
-class DataPartitioner(object):
-
-    def __init__(self, data, sizes=[0.7, 0.2, 0.1], seed=1234):
-        self.data = data
-        self.partitions = []
-        rng = Random()
-        rng.seed(seed)
-        data_len = len(data)
-        indexes = [x for x in range(0, data_len)]
-        rng.shuffle(indexes)
-
-        for frac in sizes:
-            part_len = int(frac * data_len)
-            self.partitions.append(indexes[0:part_len])
-            indexes = indexes[part_len:]
-
-    def use(self, partition):
-        return Partition(self.data, self.partitions[partition])
-
-""" Partitioning MNIST """
-def partition_dataset():
     train_set = torchvision.datasets.CIFAR10('./data', download=True, train=True, transform=transforms.Compose([transforms.ToTensor()]))
-    size = dist.get_world_size()
-    bsz = 128 / float(size)
-    partition_sizes = [1.0 / size for _ in range(size)]
-    partition = DataPartitioner(train_set, partition_sizes)
-    partition = partition.use(dist.get_rank())
-    train_set = torch.utils.data.DataLoader(partition,
-                                         batch_size=int(bsz),
-                                         shuffle=True)
-    return train_set, bsz
+    test_set = torchvision.datasets.CIFAR10("./data", download=True, train=False, transform=transforms.Compose([transforms.ToTensor()])) 
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
-
-def run(rank, size):
-    torch.manual_seed(1234)
-    train_set, bsz = partition_dataset()
     model = CNN()
-    optimizer = optim.SGD(model.parameters(),
-                          lr=0.01, momentum=0.5)
+    model.to(device)
 
-    num_batches = ceil(len(train_set.dataset) / float(bsz))
-    for epoch in range(10):
-        epoch_loss = 0.0
-        for data, target in train_set:
-            optimizer.zero_grad()
-            output = model(data)
-            loss = F.nll_loss(output, target)
-            epoch_loss += loss.item()
-            loss.backward()
-            average_gradients(model)
-            optimizer.step()
-        print('Rank ', dist.get_rank(), ', epoch ',
-              epoch, ': ', epoch_loss / num_batches)
+    dataloader_kwargs = {
+            'batch_size': args.batch_size,
+            'shuffle': True,
+    }
+    train(args, model, device, train_set, dataloader_kwargs)
 
-""" Gradient averaging. """
-def average_gradients(model):
-    size = float(dist.get_world_size())
-    for param in model.parameters():
-        dist.all_reduce(param.grad.data, op=dist.ReduceOp.SUM)
-        param.grad.data /= size
+    if args.rank == 0:
+        test(args, model, device, test_set, dataloader_kwargs)
 
-def init_process(rank, size, fn, backend='gloo'):
+    
+def init_process(args, rank, size, fn, backend='gloo'):
     """ Initialize the distributed environment. """
     os.environ['MASTER_ADDR'] = '127.0.0.1'
     os.environ['MASTER_PORT'] = '29500'
     dist.init_process_group(backend, rank=rank, world_size=size)
-    fn(rank, size)
+    fn(args, rank, size)
 
 
 if __name__ == "__main__":
     processes = []
     mp.set_start_method("spawn")
 
-    p = mp.Process(target=init_process, args=(args.rank, args.world_size, run))
+    p = mp.Process(target=init_process, args=(args, args.rank, args.world_size, run))
     p.start()
     processes.append(p)
     p.join()
