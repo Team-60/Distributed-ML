@@ -12,7 +12,7 @@ from train import train, test
 import warnings
 warnings.filterwarnings("ignore") 
 
-device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cpu')
 
 parser = argparse.ArgumentParser(description='Shared Memory MNIST')
 parser.add_argument('--batch-size', type=int, default=64, help='batch size for training (default: 64)')

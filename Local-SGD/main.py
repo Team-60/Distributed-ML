@@ -79,7 +79,7 @@ def run(args, rank, size):
     # sampling for smaller dataset: test
     test_set = torch.utils.data.Subset(test_set, subsample(test_set, 3))
 
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('cpu')
 
     model = CNN()
     model.to(device)
