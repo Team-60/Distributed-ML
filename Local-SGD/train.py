@@ -99,12 +99,12 @@ def test(args, model, device, dataset, dataloader_kwargs):
             output = model(images)
 
             loss = error(output, labels)
-            test_loss = loss.item()
+            test_loss += loss.item()
             pred = output.max(1)[1]
             correct += pred.eq(labels.to(device)).sum().item()
 
     test_loss /= len(test_loader.dataset)
-    print('Test set: Average Loss {:.2f}, Accuracy: {:.2f}%'.format(
+    print('Test set: Average Loss {:.6f}, Accuracy: {:.2f}%'.format(
         test_loss, correct / len(test_loader.dataset) * 100))
 
 
