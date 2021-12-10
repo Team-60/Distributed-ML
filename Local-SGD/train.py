@@ -42,8 +42,7 @@ class DataPartitioner(object):
     def use(self, partition):
         return Partition(self.data, self.partitions[partition])
 
-def partition_dataset(dataset):
-    train_set = torchvision.datasets.CIFAR10('./data', download=True, train=True, transform=transforms.Compose([transforms.ToTensor()]))
+def partition_dataset(train_set):
     size = dist.get_world_size()
     bsz = 128 / float(size)
     partition_sizes = [1.0 / size for _ in range(size)]
@@ -58,7 +57,9 @@ def partition_dataset(dataset):
 def train(args, model, device, dataset, dataloader_kwargs):
     
     torch.manual_seed(1234)
-    train_loader = torch.utils.data.DataLoader(dataset, **dataloader_kwargs)
+    train_set, bsz = partition_dataset(dataset)
+
+    train_loader = torch.utils.data.DataLoader(train_set, **dataloader_kwargs)
     error = nn.NLLLoss()
 
     optimizer = optim.SGD(model.parameters(), momentum=args.momentum, lr=args.learning_rate)
