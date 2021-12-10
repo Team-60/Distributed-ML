@@ -15,6 +15,9 @@ from math import ceil
 import torch.nn.functional as F
 from train import train, test
 
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning) 
+
 
 parser = argparse.ArgumentParser(description='Shared Memory MNIST')
 parser.add_argument('--batch-size', type=int, default=64, help='batch size for training (default: 64)')
