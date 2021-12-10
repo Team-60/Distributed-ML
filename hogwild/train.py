@@ -24,7 +24,6 @@ def train(args, model, device, dataset, dataloader_kwargs):
 
             loss.backward()
             SGD_step(optimizer)
-            #optimizer.step()
 
             if idx % args.display_interval == 0:
                 print('Process id: {}, Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
@@ -42,7 +41,7 @@ def test(args, model, device, dataset, dataloader_kwargs):
     test_loss = 0
     correct = 0
     with torch.no_grad():
-        for idx, (images, labels) in enumerate(test_loader):
+        for (images, labels) in test_loader:
             images, labels = images.to(device), labels.to(device)
             output = model(images)
 

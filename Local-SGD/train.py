@@ -81,10 +81,10 @@ def train(args, model, device, dataset):
             SGD_step(optimizer)
 
             if idx % args.display_interval == 0:
-                print('Rank: {}, Trian Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
+                print('Rank: {}, Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
                     args.rank, epoch, idx * len(images), len(train_set.dataset),
                     100 * idx / len(train_set), loss.item()))
-        return 
+    return 
 
 def test(args, model, device, dataset, dataloader_kwargs):
     
@@ -95,7 +95,7 @@ def test(args, model, device, dataset, dataloader_kwargs):
     test_loss = 0
     correct = 0
     with torch.no_grad():
-        for _, (images, labels) in enumerate(test_loader):
+        for (images, labels) in test_loader:
             images, labels = images.to(device), labels.to(device)
             output = model(images)
 
