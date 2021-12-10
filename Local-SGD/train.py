@@ -59,13 +59,12 @@ def train(args, model, device, dataset, dataloader_kwargs):
     torch.manual_seed(1234)
     train_set, bsz = partition_dataset(dataset)
 
-    train_loader = torch.utils.data.DataLoader(train_set, **dataloader_kwargs)
     error = nn.NLLLoss()
 
     optimizer = optim.SGD(model.parameters(), momentum=args.momentum, lr=args.learning_rate)
     for epoch in range(args.num_epochs):
         epoch_loss = 0
-        for idx, (images, labels) in enumerate(train_loader):
+        for idx, (images, labels) in enumerate(train_set):
 
             optimizer.zero_grad()
             images, labels = images.to(device), labels.to(device)
@@ -85,8 +84,8 @@ def train(args, model, device, dataset, dataloader_kwargs):
 
             if idx % args.display_interval == 0:
                 print('Rank: {}, Trian Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
-                    args.rank, epoch, idx * len(images), len(train_loader.dataset),
-                    100 * idx / len(train_loader), loss.item()))
+                    args.rank, epoch, idx * len(images), len(train_set.dataset),
+                    100 * idx / len(train_set), loss.item()))
         return 
 
 def test(args, model, device, dataset, dataloader_kwargs):

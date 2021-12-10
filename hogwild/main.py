@@ -9,6 +9,8 @@ from tqdm import tqdm
 import argparse
 from train import train, test
 
+import warnings
+warnings.filterwarnings("ignore") 
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
