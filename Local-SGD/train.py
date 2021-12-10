@@ -40,9 +40,9 @@ class DataPartitioner(object):
     def use(self, partition):
         return Partition(self.data, self.partitions[partition])
 
-def partition_dataset(train_set):
+def partition_dataset(args, train_set):
     size = dist.get_world_size()
-    bsz = 128 / float(size)
+    bsz = args.batch_size / float(size)
     partition_sizes = [1.0 / size for _ in range(size)]
     partition = DataPartitioner(train_set, partition_sizes)
     partition = partition.use(dist.get_rank())
@@ -55,7 +55,7 @@ def partition_dataset(train_set):
 def train(args, model, device, dataset):
     
     torch.manual_seed(1234)
-    train_set, bsz = partition_dataset(dataset)
+    train_set, bsz = partition_dataset(args, dataset)
 
     error = nn.NLLLoss()
 
@@ -84,7 +84,6 @@ def train(args, model, device, dataset):
                 print('Rank: {}, Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
                     args.rank, epoch, idx * len(images), len(train_set.dataset),
                     100 * idx / len(train_set), loss.item()))
-    return 
 
 def test(args, model, device, dataset, dataloader_kwargs):
     
@@ -113,7 +112,7 @@ def test(args, model, device, dataset, dataloader_kwargs):
 def SGD_step(optimizer):
 
     if not isinstance(optimizer, optim.SGD):
-        raise ValueError("Not SGD optimizer used in SGD_step()")
+        raise ValueError("Non SGD optimizer used in SGD_step()")
 
     loss = None
 

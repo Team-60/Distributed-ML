@@ -29,7 +29,6 @@ def train(args, model, device, dataset, dataloader_kwargs):
                 print('Process id: {}, Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
                     os.getpid(), epoch, idx * len(images), len(train_loader.dataset),
                     100 * idx / len(train_loader), loss.item()))
-    return 
 
 
 def test(args, model, device, dataset, dataloader_kwargs):
@@ -58,7 +57,7 @@ def test(args, model, device, dataset, dataloader_kwargs):
 def SGD_step(optimizer):
 
     if not isinstance(optimizer, optim.SGD):
-        raise ValueError("Not SGD optimizer used in SGD_step()")
+        raise ValueError("Non SGD optimizer used in SGD_step()")
 
     loss = None
 
