@@ -103,7 +103,7 @@ def test(args, model, device, dataset, dataloader_kwargs):
             pred = output.max(1)[1]
             correct += pred.eq(labels.to(device)).sum().item()
 
-    test_loss /= len(test_loader.dataset)
+    test_loss /= (len(test_loader.dataset) * args.batch_size)
     print('Test set: Average Loss {:.6f}, Accuracy: {:.2f}%'.format(
         test_loss, correct / len(test_loader.dataset) * 100))
 
