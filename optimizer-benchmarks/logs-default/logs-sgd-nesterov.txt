@@ -1,0 +1,499 @@
+100%|██████████| 391/391 [00:06<00:00, 58.34it/s]
+Performace at epoch 1
+Train Loss: 1.91651 ; Train Acc: 0.29744
+Test Loss: 1.67284 ; Test Acc: 0.38018
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.87it/s]
+Performace at epoch 2
+Train Loss: 1.47208 ; Train Acc: 0.46612
+Test Loss: 1.37281 ; Test Acc: 0.51381
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.94it/s]
+Performace at epoch 3
+Train Loss: 1.27764 ; Train Acc: 0.54372
+Test Loss: 1.27009 ; Test Acc: 0.54655
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.94it/s]
+Performace at epoch 4
+Train Loss: 1.14203 ; Train Acc: 0.59444
+Test Loss: 1.22559 ; Test Acc: 0.54985
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.66it/s]
+Performace at epoch 5
+Train Loss: 1.01385 ; Train Acc: 0.64048
+Test Loss: 1.15299 ; Test Acc: 0.59069
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.32it/s]
+Performace at epoch 6
+Train Loss: 0.88136 ; Train Acc: 0.68824
+Test Loss: 1.14171 ; Test Acc: 0.59940
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.32it/s]
+Performace at epoch 7
+Train Loss: 0.73905 ; Train Acc: 0.73980
+Test Loss: 1.13834 ; Test Acc: 0.62432
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.57it/s]
+Performace at epoch 8
+Train Loss: 0.58770 ; Train Acc: 0.79256
+Test Loss: 1.18246 ; Test Acc: 0.61351
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.15it/s]
+Performace at epoch 9
+Train Loss: 0.43534 ; Train Acc: 0.84976
+Test Loss: 1.28610 ; Test Acc: 0.61742
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.76it/s]
+Performace at epoch 10
+Train Loss: 0.29930 ; Train Acc: 0.89736
+Test Loss: 1.45545 ; Test Acc: 0.60390
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.22it/s]
+Performace at epoch 11
+Train Loss: 0.20954 ; Train Acc: 0.93212
+Test Loss: 1.67238 ; Test Acc: 0.60090
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.23it/s]
+Performace at epoch 12
+Train Loss: 0.15321 ; Train Acc: 0.94996
+Test Loss: 1.81380 ; Test Acc: 0.61652
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.96it/s]
+Performace at epoch 13
+Train Loss: 0.11678 ; Train Acc: 0.96304
+Test Loss: 1.98485 ; Test Acc: 0.59880
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.09it/s]
+Performace at epoch 14
+Train Loss: 0.09963 ; Train Acc: 0.96832
+Test Loss: 2.05886 ; Test Acc: 0.61141
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.18it/s]
+Performace at epoch 15
+Train Loss: 0.08999 ; Train Acc: 0.97124
+Test Loss: 2.22211 ; Test Acc: 0.60210
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.76it/s]
+Performace at epoch 16
+Train Loss: 0.08381 ; Train Acc: 0.97312
+Test Loss: 2.20119 ; Test Acc: 0.61772
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.75it/s]
+Performace at epoch 17
+Train Loss: 0.07358 ; Train Acc: 0.97672
+Test Loss: 2.27436 ; Test Acc: 0.62252
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.84it/s]
+Performace at epoch 18
+Train Loss: 0.06136 ; Train Acc: 0.98024
+Test Loss: 2.29922 ; Test Acc: 0.61952
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.47it/s]
+Performace at epoch 19
+Train Loss: 0.05112 ; Train Acc: 0.98328
+Test Loss: 2.65621 ; Test Acc: 0.60841
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.00it/s]
+Performace at epoch 20
+Train Loss: 0.04588 ; Train Acc: 0.98548
+Test Loss: 2.63537 ; Test Acc: 0.60631
+==============
+100%|██████████| 391/391 [00:06<00:00, 56.17it/s]
+Performace at epoch 21
+Train Loss: 0.04506 ; Train Acc: 0.98540
+Test Loss: 2.69474 ; Test Acc: 0.59790
+==============
+100%|██████████| 391/391 [00:06<00:00, 56.50it/s]
+Performace at epoch 22
+Train Loss: 0.04170 ; Train Acc: 0.98692
+Test Loss: 3.01066 ; Test Acc: 0.59970
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.02it/s]
+Performace at epoch 23
+Train Loss: 0.04410 ; Train Acc: 0.98604
+Test Loss: 2.64843 ; Test Acc: 0.61381
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.80it/s]
+Performace at epoch 24
+Train Loss: 0.03252 ; Train Acc: 0.98956
+Test Loss: 2.67135 ; Test Acc: 0.61862
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.72it/s]
+Performace at epoch 25
+Train Loss: 0.01925 ; Train Acc: 0.99480
+Test Loss: 2.90357 ; Test Acc: 0.60991
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.85it/s]
+Performace at epoch 26
+Train Loss: 0.01587 ; Train Acc: 0.99580
+Test Loss: 2.81118 ; Test Acc: 0.61051
+==============
+100%|██████████| 391/391 [00:06<00:00, 56.28it/s]
+Performace at epoch 27
+Train Loss: 0.00654 ; Train Acc: 0.99836
+Test Loss: 2.83927 ; Test Acc: 0.62883
+==============
+100%|██████████| 391/391 [00:06<00:00, 56.45it/s]
+Performace at epoch 28
+Train Loss: 0.00128 ; Train Acc: 0.99988
+Test Loss: 2.85323 ; Test Acc: 0.63514
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.29it/s]
+Performace at epoch 29
+Train Loss: 0.00059 ; Train Acc: 0.99992
+Test Loss: 2.89772 ; Test Acc: 0.63123
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.52it/s]
+Performace at epoch 30
+Train Loss: 0.00035 ; Train Acc: 0.99996
+Test Loss: 2.93356 ; Test Acc: 0.63393
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.02it/s]
+Performace at epoch 31
+Train Loss: 0.00033 ; Train Acc: 1.00000
+Test Loss: 2.98653 ; Test Acc: 0.63333
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.91it/s]
+Performace at epoch 32
+Train Loss: 0.00024 ; Train Acc: 1.00000
+Test Loss: 2.99485 ; Test Acc: 0.63423
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.96it/s]
+Performace at epoch 33
+Train Loss: 0.00021 ; Train Acc: 1.00000
+Test Loss: 3.01289 ; Test Acc: 0.63363
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.26it/s]
+Performace at epoch 34
+Train Loss: 0.00019 ; Train Acc: 1.00000
+Test Loss: 3.02962 ; Test Acc: 0.63453
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.04it/s]
+Performace at epoch 35
+Train Loss: 0.00017 ; Train Acc: 1.00000
+Test Loss: 3.04441 ; Test Acc: 0.63604
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.93it/s]
+Performace at epoch 36
+Train Loss: 0.00016 ; Train Acc: 1.00000
+Test Loss: 3.06176 ; Test Acc: 0.63483
+==============
+100%|██████████| 391/391 [00:06<00:00, 56.74it/s]
+Performace at epoch 37
+Train Loss: 0.00015 ; Train Acc: 1.00000
+Test Loss: 3.07448 ; Test Acc: 0.63514
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.19it/s]
+Performace at epoch 38
+Train Loss: 0.00014 ; Train Acc: 1.00000
+Test Loss: 3.09044 ; Test Acc: 0.63453
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.19it/s]
+Performace at epoch 39
+Train Loss: 0.00013 ; Train Acc: 1.00000
+Test Loss: 3.10127 ; Test Acc: 0.63544
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.61it/s]
+Performace at epoch 40
+Train Loss: 0.00012 ; Train Acc: 1.00000
+Test Loss: 3.11204 ; Test Acc: 0.63514
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.49it/s]
+Performace at epoch 41
+Train Loss: 0.00012 ; Train Acc: 1.00000
+Test Loss: 3.12446 ; Test Acc: 0.63453
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.49it/s]
+Performace at epoch 42
+Train Loss: 0.00011 ; Train Acc: 1.00000
+Test Loss: 3.13455 ; Test Acc: 0.63544
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.59it/s]
+Performace at epoch 43
+Train Loss: 0.00010 ; Train Acc: 1.00000
+Test Loss: 3.14427 ; Test Acc: 0.63574
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.11it/s]
+Performace at epoch 44
+Train Loss: 0.00010 ; Train Acc: 1.00000
+Test Loss: 3.15228 ; Test Acc: 0.63604
+==============
+100%|██████████| 391/391 [00:06<00:00, 56.77it/s]
+Performace at epoch 45
+Train Loss: 0.00010 ; Train Acc: 1.00000
+Test Loss: 3.16407 ; Test Acc: 0.63514
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.66it/s]
+Performace at epoch 46
+Train Loss: 0.00009 ; Train Acc: 1.00000
+Test Loss: 3.17140 ; Test Acc: 0.63544
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.20it/s]
+Performace at epoch 47
+Train Loss: 0.00009 ; Train Acc: 1.00000
+Test Loss: 3.18188 ; Test Acc: 0.63544
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.15it/s]
+Performace at epoch 48
+Train Loss: 0.00009 ; Train Acc: 1.00000
+Test Loss: 3.18958 ; Test Acc: 0.63514
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.88it/s]
+Performace at epoch 49
+Train Loss: 0.00008 ; Train Acc: 1.00000
+Test Loss: 3.19876 ; Test Acc: 0.63514
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.65it/s]
+Performace at epoch 50
+Train Loss: 0.00008 ; Train Acc: 1.00000
+Test Loss: 3.20453 ; Test Acc: 0.63544
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.94it/s]
+Performace at epoch 51
+Train Loss: 0.00008 ; Train Acc: 1.00000
+Test Loss: 3.21263 ; Test Acc: 0.63544
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.53it/s]
+Performace at epoch 52
+Train Loss: 0.00007 ; Train Acc: 1.00000
+Test Loss: 3.21983 ; Test Acc: 0.63544
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.19it/s]
+Performace at epoch 53
+Train Loss: 0.00007 ; Train Acc: 1.00000
+Test Loss: 3.22592 ; Test Acc: 0.63574
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.12it/s]
+Performace at epoch 54
+Train Loss: 0.00007 ; Train Acc: 1.00000
+Test Loss: 3.23115 ; Test Acc: 0.63574
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.10it/s]
+Performace at epoch 55
+Train Loss: 0.00007 ; Train Acc: 1.00000
+Test Loss: 3.23911 ; Test Acc: 0.63604
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.95it/s]
+Performace at epoch 56
+Train Loss: 0.00007 ; Train Acc: 1.00000
+Test Loss: 3.24572 ; Test Acc: 0.63664
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.18it/s]
+Performace at epoch 57
+Train Loss: 0.00006 ; Train Acc: 1.00000
+Test Loss: 3.25219 ; Test Acc: 0.63664
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.27it/s]
+Performace at epoch 58
+Train Loss: 0.00006 ; Train Acc: 1.00000
+Test Loss: 3.25588 ; Test Acc: 0.63664
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.81it/s]
+Performace at epoch 59
+Train Loss: 0.00006 ; Train Acc: 1.00000
+Test Loss: 3.26183 ; Test Acc: 0.63724
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.05it/s]
+Performace at epoch 60
+Train Loss: 0.00006 ; Train Acc: 1.00000
+Test Loss: 3.26801 ; Test Acc: 0.63604
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.34it/s]
+Performace at epoch 61
+Train Loss: 0.00006 ; Train Acc: 1.00000
+Test Loss: 3.27363 ; Test Acc: 0.63724
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.99it/s]
+Performace at epoch 62
+Train Loss: 0.00006 ; Train Acc: 1.00000
+Test Loss: 3.27835 ; Test Acc: 0.63754
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.28it/s]
+Performace at epoch 63
+Train Loss: 0.00006 ; Train Acc: 1.00000
+Test Loss: 3.28501 ; Test Acc: 0.63694
+==============
+100%|██████████| 391/391 [00:06<00:00, 60.17it/s]
+Performace at epoch 64
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.29012 ; Test Acc: 0.63694
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.99it/s]
+Performace at epoch 65
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.29377 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.66it/s]
+Performace at epoch 66
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.29925 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.50it/s]
+Performace at epoch 67
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.30333 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.18it/s]
+Performace at epoch 68
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.30849 ; Test Acc: 0.63754
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.31it/s]
+Performace at epoch 69
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.31185 ; Test Acc: 0.63784
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.21it/s]
+Performace at epoch 70
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.31600 ; Test Acc: 0.63844
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.92it/s]
+Performace at epoch 71
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.32087 ; Test Acc: 0.63874
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.15it/s]
+Performace at epoch 72
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.32459 ; Test Acc: 0.63754
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.64it/s]
+Performace at epoch 73
+Train Loss: 0.00005 ; Train Acc: 1.00000
+Test Loss: 3.32876 ; Test Acc: 0.63874
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.76it/s]
+Performace at epoch 74
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.33404 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.13it/s]
+Performace at epoch 75
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.33704 ; Test Acc: 0.63844
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.42it/s]
+Performace at epoch 76
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.34092 ; Test Acc: 0.63874
+==============
+100%|██████████| 391/391 [00:06<00:00, 57.39it/s]
+Performace at epoch 77
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.34490 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.44it/s]
+Performace at epoch 78
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.34916 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.22it/s]
+Performace at epoch 79
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.35292 ; Test Acc: 0.63844
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.95it/s]
+Performace at epoch 80
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.35718 ; Test Acc: 0.63784
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.04it/s]
+Performace at epoch 81
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.35917 ; Test Acc: 0.63754
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.00it/s]
+Performace at epoch 82
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.36288 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.86it/s]
+Performace at epoch 83
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.36716 ; Test Acc: 0.63754
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.31it/s]
+Performace at epoch 84
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.37076 ; Test Acc: 0.63784
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.04it/s]
+Performace at epoch 85
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.37431 ; Test Acc: 0.63784
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.35it/s]
+Performace at epoch 86
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.37808 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.55it/s]
+Performace at epoch 87
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.38004 ; Test Acc: 0.63844
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.55it/s]
+Performace at epoch 88
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.38391 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.58it/s]
+Performace at epoch 89
+Train Loss: 0.00004 ; Train Acc: 1.00000
+Test Loss: 3.38765 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.47it/s]
+Performace at epoch 90
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.39002 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.28it/s]
+Performace at epoch 91
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.39382 ; Test Acc: 0.63814
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.27it/s]
+Performace at epoch 92
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.39587 ; Test Acc: 0.63844
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.83it/s]
+Performace at epoch 93
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.39909 ; Test Acc: 0.63784
+==============
+100%|██████████| 391/391 [00:06<00:00, 59.25it/s]
+Performace at epoch 94
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.40255 ; Test Acc: 0.63844
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.78it/s]
+Performace at epoch 95
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.40549 ; Test Acc: 0.63844
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.23it/s]
+Performace at epoch 96
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.40887 ; Test Acc: 0.63874
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.11it/s]
+Performace at epoch 97
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.41036 ; Test Acc: 0.63874
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.63it/s]
+Performace at epoch 98
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.41340 ; Test Acc: 0.63844
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.59it/s]
+Performace at epoch 99
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.41738 ; Test Acc: 0.63874
+==============
+100%|██████████| 391/391 [00:06<00:00, 58.32it/s]Performace at epoch 100
+Train Loss: 0.00003 ; Train Acc: 1.00000
+Test Loss: 3.41954 ; Test Acc: 0.63844
+==============
