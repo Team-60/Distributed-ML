@@ -85,8 +85,4 @@ def init_process(args, rank, size, fn, backend='gloo'):
 if __name__ == "__main__":
     processes = []
     mp.set_start_method("spawn")
-
-    p = mp.Process(target=init_process, args=(args, args.rank, args.world_size, run))
-    p.start()
-    processes.append(p)
-    p.join()
+    init_process(args, args.rank, args.world_size, run)
