@@ -1,6 +1,4 @@
 import torch
-import torchvision
-import torchvision.transforms as transforms
 import torch.distributed as dist
 import torch.nn as nn
 import numpy as np
@@ -54,7 +52,7 @@ def partition_dataset(train_set):
     return train_set, bsz
 
 
-def train(args, model, device, dataset, dataloader_kwargs):
+def train(args, model, device, dataset):
     
     torch.manual_seed(1234)
     train_set, bsz = partition_dataset(dataset)
@@ -97,7 +95,7 @@ def test(args, model, device, dataset, dataloader_kwargs):
     test_loss = 0
     correct = 0
     with torch.no_grad():
-        for idx, (images, labels) in enumerate(test_loader):
+        for _, (images, labels) in enumerate(test_loader):
             images, labels = images.to(device), labels.to(device)
             output = model(images)
 

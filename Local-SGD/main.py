@@ -88,7 +88,7 @@ def run(args, rank, size):
             'batch_size': args.batch_size,
             'shuffle': True,
     }
-    train(args, model, device, train_set, dataloader_kwargs)
+    train(args, model, device, train_set)
 
     if args.rank == 0:
         test(args, model, device, test_set, dataloader_kwargs)
