@@ -149,7 +149,8 @@ Rank: 0, Trian Epoch: 3 [3990/8333 (48%)]	Loss: 1.626609
 Rank: 0, Trian Epoch: 3 [4200/8333 (50%)]	Loss: 1.753328
 Rank: 0, Trian Epoch: 3 [4410/8333 (53%)]	Loss: 1.284586
 Rank: 0, Trian Epoch: 3 [4620/8333 (55%)]	Loss: 1.514411
-Rank: 0, Trian Epoch: 3 [4830/8333 (58%)]	Loss: 1.668765Files already downloaded and verified
+Rank: 0, Trian Epoch: 3 [4830/8333 (58%)]	Loss: 1.668765
+Files already downloaded and verified
 Files already downloaded and verified
 Rank: 2, Trian Epoch: 0 [0/8333 (0%)]	Loss: 2.295908
 Rank: 2, Trian Epoch: 0 [210/8333 (3%)]	Loss: 2.305013
@@ -294,7 +295,8 @@ Rank: 2, Trian Epoch: 3 [3990/8333 (48%)]	Loss: 1.780578
 Rank: 2, Trian Epoch: 3 [4200/8333 (50%)]	Loss: 1.521395
 Rank: 2, Trian Epoch: 3 [4410/8333 (53%)]	Loss: 1.523295
 Rank: 2, Trian Epoch: 3 [4620/8333 (55%)]	Loss: 1.577649
-Rank: 2, Trian Epoch: 3 [4830/8333 (58%)]	Loss: 1.391107Files already downloaded and verified
+Rank: 2, Trian Epoch: 3 [4830/8333 (58%)]	Loss: 1.391107
+Files already downloaded and verified
 Files already downloaded and verified
 Rank: 1, Trian Epoch: 0 [0/8333 (0%)]	Loss: 2.297791
 Rank: 1, Trian Epoch: 0 [210/8333 (3%)]	Loss: 2.289011
@@ -1876,7 +1878,8 @@ Rank: 2, Trian Epoch: 17 [6720/8333 (80%)]	Loss: 0.095148
 Rank: 2, Trian Epoch: 17 [6930/8333 (83%)]	Loss: 0.197041
 Rank: 2, Trian Epoch: 17 [7140/8333 (85%)]	Loss: 0.045684
 Rank: 2, Trian Epoch: 17 [7350/8333 (88%)]	Loss: 0.082606
-Rank: 2, Trian Epoch: 17 [7560/8333 (90%)]	Loss: 0.134978Rank: 1, Trian Epoch: 14 [3150/8333 (38%)]	Loss: 0.280325
+Rank: 2, Trian Epoch: 17 [7560/8333 (90%)]	Loss: 0.134978
+Rank: 1, Trian Epoch: 14 [3150/8333 (38%)]	Loss: 0.280325
 Rank: 1, Trian Epoch: 14 [3360/8333 (40%)]	Loss: 0.178785
 Rank: 1, Trian Epoch: 14 [3570/8333 (43%)]	Loss: 0.222484
 Rank: 1, Trian Epoch: 14 [3780/8333 (45%)]	Loss: 0.140541
@@ -2017,7 +2020,8 @@ Rank: 1, Trian Epoch: 17 [6720/8333 (80%)]	Loss: 0.054001
 Rank: 1, Trian Epoch: 17 [6930/8333 (83%)]	Loss: 0.047798
 Rank: 1, Trian Epoch: 17 [7140/8333 (85%)]	Loss: 0.042204
 Rank: 1, Trian Epoch: 17 [7350/8333 (88%)]	Loss: 0.075993
-Rank: 1, Trian Epoch: 17 [7560/8333 (90%)]	Loss: 0.051583Rank: 0, Trian Epoch: 14 [3150/8333 (38%)]	Loss: 0.167112
+Rank: 1, Trian Epoch: 17 [7560/8333 (90%)]	Loss: 0.051583
+Rank: 0, Trian Epoch: 14 [3150/8333 (38%)]	Loss: 0.167112
 Rank: 0, Trian Epoch: 14 [3360/8333 (40%)]	Loss: 0.198316
 Rank: 0, Trian Epoch: 14 [3570/8333 (43%)]	Loss: 0.233352
 Rank: 0, Trian Epoch: 14 [3780/8333 (45%)]	Loss: 0.084187
@@ -2728,7 +2732,8 @@ Rank: 1, Trian Epoch: 24 [7560/8333 (90%)]	Loss: 0.007467
 Rank: 1, Trian Epoch: 24 [7770/8333 (93%)]	Loss: 0.019551
 Rank: 1, Trian Epoch: 24 [7980/8333 (95%)]	Loss: 0.061753
 Rank: 1, Trian Epoch: 24 [8190/8333 (98%)]	Loss: 0.018030
-Rank: 1, Trian Epoch: 25 [0/8333 (0%)]	Loss: 0.076390Rank: 2, Trian Epoch: 21 [3990/8333 (48%)]	Loss: 0.003627
+Rank: 1, Trian Epoch: 25 [0/8333 (0%)]	Loss: 0.076390
+Rank: 2, Trian Epoch: 21 [3990/8333 (48%)]	Loss: 0.003627
 Rank: 2, Trian Epoch: 21 [4200/8333 (50%)]	Loss: 0.028890
 Rank: 2, Trian Epoch: 21 [4410/8333 (53%)]	Loss: 0.001636
 Rank: 2, Trian Epoch: 21 [4620/8333 (55%)]	Loss: 0.004749
@@ -2869,7 +2874,8 @@ Rank: 2, Trian Epoch: 24 [7560/8333 (90%)]	Loss: 0.001871
 Rank: 2, Trian Epoch: 24 [7770/8333 (93%)]	Loss: 0.000707
 Rank: 2, Trian Epoch: 24 [7980/8333 (95%)]	Loss: 0.000795
 Rank: 2, Trian Epoch: 24 [8190/8333 (98%)]	Loss: 0.001027
-Rank: 2, Trian Epoch: 25 [0/8333 (0%)]	Loss: 0.001545Rank: 0, Trian Epoch: 21 [3990/8333 (48%)]	Loss: 0.018204
+Rank: 2, Trian Epoch: 25 [0/8333 (0%)]	Loss: 0.001545
+Rank: 0, Trian Epoch: 21 [3990/8333 (48%)]	Loss: 0.018204
 Rank: 0, Trian Epoch: 21 [4200/8333 (50%)]	Loss: 0.003683
 Rank: 0, Trian Epoch: 21 [4410/8333 (53%)]	Loss: 0.002814
 Rank: 0, Trian Epoch: 21 [4620/8333 (55%)]	Loss: 0.004070
@@ -4006,7 +4012,8 @@ Rank: 2, Trian Epoch: 35 [4620/8333 (55%)]	Loss: 0.000861
 Rank: 2, Trian Epoch: 35 [4830/8333 (58%)]	Loss: 0.000697
 Rank: 2, Trian Epoch: 35 [5040/8333 (60%)]	Loss: 0.000517
 Rank: 2, Trian Epoch: 35 [5250/8333 (63%)]	Loss: 0.000426
-Rank: 2, Trian Epoch: 35 [5460/8333 (65%)]	Loss: 0.000592Rank: 1, Trian Epoch: 32 [1050/8333 (13%)]	Loss: 0.000517
+Rank: 2, Trian Epoch: 35 [5460/8333 (65%)]	Loss: 0.000592
+Rank: 1, Trian Epoch: 32 [1050/8333 (13%)]	Loss: 0.000517
 Rank: 1, Trian Epoch: 32 [1260/8333 (15%)]	Loss: 0.000781
 Rank: 1, Trian Epoch: 32 [1470/8333 (18%)]	Loss: 0.000737
 Rank: 1, Trian Epoch: 32 [1680/8333 (20%)]	Loss: 0.000386
@@ -4147,7 +4154,8 @@ Rank: 1, Trian Epoch: 35 [4620/8333 (55%)]	Loss: 0.000394
 Rank: 1, Trian Epoch: 35 [4830/8333 (58%)]	Loss: 0.000457
 Rank: 1, Trian Epoch: 35 [5040/8333 (60%)]	Loss: 0.000515
 Rank: 1, Trian Epoch: 35 [5250/8333 (63%)]	Loss: 0.000132
-Rank: 1, Trian Epoch: 35 [5460/8333 (65%)]	Loss: 0.000206Rank: 0, Trian Epoch: 32 [1050/8333 (13%)]	Loss: 0.001104
+Rank: 1, Trian Epoch: 35 [5460/8333 (65%)]	Loss: 0.000206
+Rank: 0, Trian Epoch: 32 [1050/8333 (13%)]	Loss: 0.001104
 Rank: 0, Trian Epoch: 32 [1260/8333 (15%)]	Loss: 0.000376
 Rank: 0, Trian Epoch: 32 [1470/8333 (18%)]	Loss: 0.000836
 Rank: 0, Trian Epoch: 32 [1680/8333 (20%)]	Loss: 0.000381
@@ -4858,7 +4866,8 @@ Rank: 1, Trian Epoch: 42 [5460/8333 (65%)]	Loss: 0.000204
 Rank: 1, Trian Epoch: 42 [5670/8333 (68%)]	Loss: 0.000228
 Rank: 1, Trian Epoch: 42 [5880/8333 (70%)]	Loss: 0.000198
 Rank: 1, Trian Epoch: 42 [6090/8333 (73%)]	Loss: 0.000251
-Rank: 1, Trian Epoch: 42 [6300/8333 (75%)]	Loss: 0.000371Rank: 2, Trian Epoch: 39 [1890/8333 (23%)]	Loss: 0.000306
+Rank: 1, Trian Epoch: 42 [6300/8333 (75%)]	Loss: 0.000371
+Rank: 2, Trian Epoch: 39 [1890/8333 (23%)]	Loss: 0.000306
 Rank: 2, Trian Epoch: 39 [2100/8333 (25%)]	Loss: 0.000268
 Rank: 2, Trian Epoch: 39 [2310/8333 (28%)]	Loss: 0.000717
 Rank: 2, Trian Epoch: 39 [2520/8333 (30%)]	Loss: 0.000376
@@ -4999,7 +5008,8 @@ Rank: 2, Trian Epoch: 42 [5460/8333 (65%)]	Loss: 0.000103
 Rank: 2, Trian Epoch: 42 [5670/8333 (68%)]	Loss: 0.000223
 Rank: 2, Trian Epoch: 42 [5880/8333 (70%)]	Loss: 0.000212
 Rank: 2, Trian Epoch: 42 [6090/8333 (73%)]	Loss: 0.000275
-Rank: 2, Trian Epoch: 42 [6300/8333 (75%)]	Loss: 0.000440Rank: 0, Trian Epoch: 39 [1890/8333 (23%)]	Loss: 0.000143
+Rank: 2, Trian Epoch: 42 [6300/8333 (75%)]	Loss: 0.000440
+Rank: 0, Trian Epoch: 39 [1890/8333 (23%)]	Loss: 0.000143
 Rank: 0, Trian Epoch: 39 [2100/8333 (25%)]	Loss: 0.000192
 Rank: 0, Trian Epoch: 39 [2310/8333 (28%)]	Loss: 0.000190
 Rank: 0, Trian Epoch: 39 [2520/8333 (30%)]	Loss: 0.000164
@@ -5710,7 +5720,8 @@ Rank: 2, Trian Epoch: 49 [6300/8333 (75%)]	Loss: 0.000175
 Rank: 2, Trian Epoch: 49 [6510/8333 (78%)]	Loss: 0.000212
 Rank: 2, Trian Epoch: 49 [6720/8333 (80%)]	Loss: 0.000232
 Rank: 2, Trian Epoch: 49 [6930/8333 (83%)]	Loss: 0.000141
-Rank: 2, Trian Epoch: 49 [7140/8333 (85%)]	Loss: 0.000143Rank: 1, Trian Epoch: 46 [2730/8333 (33%)]	Loss: 0.000165
+Rank: 2, Trian Epoch: 49 [7140/8333 (85%)]	Loss: 0.000143
+Rank: 1, Trian Epoch: 46 [2730/8333 (33%)]	Loss: 0.000165
 Rank: 1, Trian Epoch: 46 [2940/8333 (35%)]	Loss: 0.000270
 Rank: 1, Trian Epoch: 46 [3150/8333 (38%)]	Loss: 0.000160
 Rank: 1, Trian Epoch: 46 [3360/8333 (40%)]	Loss: 0.000133
@@ -5851,7 +5862,8 @@ Rank: 1, Trian Epoch: 49 [6300/8333 (75%)]	Loss: 0.000311
 Rank: 1, Trian Epoch: 49 [6510/8333 (78%)]	Loss: 0.000343
 Rank: 1, Trian Epoch: 49 [6720/8333 (80%)]	Loss: 0.000063
 Rank: 1, Trian Epoch: 49 [6930/8333 (83%)]	Loss: 0.000160
-Rank: 1, Trian Epoch: 49 [7140/8333 (85%)]	Loss: 0.000094Rank: 0, Trian Epoch: 46 [2730/8333 (33%)]	Loss: 0.000388
+Rank: 1, Trian Epoch: 49 [7140/8333 (85%)]	Loss: 0.000094
+Rank: 0, Trian Epoch: 46 [2730/8333 (33%)]	Loss: 0.000388
 Rank: 0, Trian Epoch: 46 [2940/8333 (35%)]	Loss: 0.000137
 Rank: 0, Trian Epoch: 46 [3150/8333 (38%)]	Loss: 0.000266
 Rank: 0, Trian Epoch: 46 [3360/8333 (40%)]	Loss: 0.000395
