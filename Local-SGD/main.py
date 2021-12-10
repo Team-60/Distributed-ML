@@ -16,7 +16,7 @@ import torch.nn.functional as F
 from train import train, test
 
 import warnings
-warnings.filterwarnings("ignore", DeprecationWarning) 
+warnings.filterwarnings("ignore") 
 
 
 parser = argparse.ArgumentParser(description='Shared Memory MNIST')

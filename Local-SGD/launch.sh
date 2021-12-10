@@ -1,11 +1,12 @@
 #!/bin/bash
 
-python3 main.py --world-size 3 --rank 0 & pid=$!
-PID_LIST+=" $pid";
-python3 main.py --world-size 3 --rank 1 & pid=$!
-PID_LIST+=" $pid";
-python3 main.py --world-size 3 --rank 2 & pid=$!
-PID_LIST+=" $pid";
+python3 downloader.py
+
+for ((i = 0; i < $1; i ++))
+do 
+    python3 main.py --world-size $1 --rank $i & pid=$!
+    PID_LIST+=" $pid";
+done
 
 trap "kill $PID_LIST" SIGINT
 
