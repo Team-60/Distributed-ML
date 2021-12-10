@@ -23,8 +23,26 @@ parser.add_argument('--display-interval', type=int, default=5, help='interval fo
 parser.add_argument('--num-processes', type=int, default=2, help='number of processes used to train model')
 args = parser.parse_args()
 
+def subsample(dataset, c):
+  '''
+  subsamples dataset by a factor of c
+  '''
+  sample_cnt = int(len(dataset) / (10 * c))
+  class_seen = dict([(i, 0) for i in range(10)])
+  train_indices = []
+  for i, (_, l) in enumerate(dataset):
+    if class_seen[l] >= sample_cnt:
+      continue
+    class_seen[l] += 1
+    train_indices.append(i)
+  return train_indices
+
 train_set = torchvision.datasets.CIFAR10('./data', download=True, train=True, transform=transforms.Compose([transforms.ToTensor()]))
 test_set = torchvision.datasets.CIFAR10("./data", download=True, train=False, transform=transforms.Compose([transforms.ToTensor()])) 
+# sampling for smaller dataset: train
+train_set = torch.utils.data.Subset(train_set, subsample(train_set, 2))
+# sampling for smaller dataset: test
+test_set = torch.utils.data.Subset(test_set, subsample(test_set, 3))
 
 class CNN(nn.Module):
 

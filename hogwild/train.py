@@ -27,7 +27,7 @@ def train(args, model, device, dataset, dataloader_kwargs):
             #optimizer.step()
 
             if idx % args.display_interval == 0:
-                print('Process id: {}, Trian Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
+                print('Process id: {}, Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:0.6f}'.format(
                     os.getpid(), epoch, idx * len(images), len(train_loader.dataset),
                     100 * idx / len(train_loader), loss.item()))
         return 
